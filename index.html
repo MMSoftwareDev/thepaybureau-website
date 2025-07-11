@@ -707,51 +707,10 @@
             margin-bottom: 2rem;
         }
         
-        .email-form {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .email-input {
-            flex: 1;
-            padding: 1rem 1.25rem;
-            border: 2px solid var(--gray-200);
-            border-radius: 12px;
-            font-size: 1rem;
-            background: rgba(249, 250, 251, 0.8);
-            transition: all 0.3s ease;
-        }
-        
-        .email-input:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 4px rgba(64, 29, 108, 0.1);
-        }
-        
-        .email-submit {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 12px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            white-space: nowrap;
-        }
-        
-        .email-submit:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(64, 29, 108, 0.3);
-        }
+
         
         .trust-indicators {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            font-size: 0.9rem;
-            color: var(--gray-500);
+            display: none; /* Hide this section completely */
         }
         
         .trust-item {
@@ -951,7 +910,7 @@
                     <span class="logo-icon">🏢</span>
                     ThePayBureau
                 </a>
-                <a href="#join" class="nav-cta">Join Waitlist</a>
+                <a href="#hero-form" class="nav-cta">Get Early Access</a>
             </div>
         </nav>
     </header>
@@ -981,7 +940,7 @@
                     We're building the future of payroll bureau operations. Join the exclusive community of forward-thinking bureau owners who want to be part of the transformation.
                 </p>
                 
-                <div class="hero-form">
+                <div class="hero-form" id="hero-form">
                     <h3 class="form-title">🎯 Get Exclusive Early Access</h3>
                     <p class="form-subtitle">Be first to experience the revolution</p>
                     
@@ -1073,14 +1032,6 @@
                     </div>
                     
                     <div class="problem-card">
-                        <span class="problem-icon">🏝️</span>
-                        <h3 class="problem-title">Working in Isolation</h3>
-                        <p class="problem-description">
-                            No community to share experiences with, learn from peers, or access proven strategies that work for other bureaus.
-                        </p>
-                    </div>
-                    
-                    <div class="problem-card">
                         <span class="problem-icon">⏰</span>
                         <h3 class="problem-title">Time Drain</h3>
                         <p class="problem-description">
@@ -1119,20 +1070,14 @@
                     </div>
                     
                     <div class="vision-feature">
-                        <span class="vision-feature-icon">📈</span>
-                        <h3 class="vision-feature-title">Growth Focused</h3>
-                        <p class="vision-feature-text">Tools and insights that scale with your success</p>
-                    </div>
-                    
-                    <div class="vision-feature">
                         <span class="vision-feature-icon">🚀</span>
                         <h3 class="vision-feature-title">Innovation First</h3>
                         <p class="vision-feature-text">Modern solutions for the modern bureau owner</p>
                     </div>
                 </div>
                 
-                <a href="#join" class="vision-cta">
-                    Be Part of the Revolution
+                <a href="#hero-form" class="vision-cta">
+                    Get Early Access
                 </a>
             </div>
         </div>
@@ -1197,7 +1142,6 @@
                                 </button>
                             </div>
                         </form>
-                        
                         <div class="trust-indicators">
                             <div class="trust-item">
                                 <span class="trust-icon">🔐</span>
