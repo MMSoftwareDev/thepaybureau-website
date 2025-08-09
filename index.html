@@ -114,6 +114,27 @@
             filter: drop-shadow(0 2px 4px rgba(64, 29, 108, 0.3));
         }
         
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: var(--gray-700);
+            padding: 0.75rem 1.25rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border-radius: 50px;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary);
+            background: rgba(64, 29, 108, 0.05);
+        }
+        
         .nav-cta {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
@@ -781,6 +802,15 @@
         }
         
         @media (max-width: 768px) {
+            .nav-buttons {
+                gap: 0.5rem;
+            }
+            
+            .nav-link {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.85rem;
+            }
+            
             .hero {
                 padding: 120px 0 100px;
                 min-height: auto;
@@ -828,6 +858,10 @@
         }
         
         @media (max-width: 480px) {
+            .nav-link {
+                display: none;
+            }
+            
             .hero-title {
                 font-size: 2.5rem;
             }
@@ -874,7 +908,10 @@
                     <span class="logo-icon">🏢</span>
                     ThePayBureau
                 </a>
-                <a href="#hero-form" class="nav-cta">Get Early Access</a>
+                <div class="nav-buttons">
+                    <a href="/pro.html" class="nav-link">For Payroll Specialists</a>
+                    <a href="#hero-form" class="nav-cta">Get Early Access</a>
+                </div>
             </div>
         </nav>
     </header>
