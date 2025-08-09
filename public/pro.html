@@ -72,6 +72,58 @@
             font-weight: 500;
         }
         
+        /* Navigation Header */
+        .nav-header {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .nav-logo-icon {
+            font-size: 1.5rem;
+        }
+        
+        .nav-logo-text {
+            font-size: 1.25rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #401D6C, #EC385D);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-bureau-link {
+            color: #6B7280;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            border: 1px solid #E5E7EB;
+        }
+        
+        .nav-bureau-link:hover {
+            background: #F9FAFB;
+            color: #374151;
+        }
+        
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #fdfeff 0%, var(--light-bg) 30%, #ffffff 70%, #fafbfe 100%);
@@ -498,6 +550,49 @@
             font-size: 0.95rem;
         }
         
+        /* Bureau Owner CTA Section */
+        .bureau-cta-section {
+            padding: 60px 0;
+            background: linear-gradient(135deg, #F8F4FF 0%, #ffffff 100%);
+            border-top: 1px solid #E5E7EB;
+        }
+        
+        .bureau-cta-content {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .bureau-cta-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #374151;
+            margin-bottom: 1rem;
+        }
+        
+        .bureau-cta-description {
+            color: #6B7280;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .bureau-cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #401D6C, #EC385D);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(64, 29, 108, 0.2);
+        }
+        
+        .bureau-cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(64, 29, 108, 0.3);
+        }
+        
         /* CTA Section */
         .cta-section {
             padding: 100px 0;
@@ -684,6 +779,12 @@
             .hero-cta-group {
                 flex-direction: column;
             }
+            
+            .nav-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
         }
         
         @media (max-width: 480px) {
@@ -706,6 +807,21 @@
     <div class="top-banner">
         ⚡ Average setup time: 58 seconds | 🏆 Zero missed deadlines reported last month | 👥 Join 500+ bureau specialists this month
     </div>
+
+    <!-- Navigation Header -->
+    <header class="nav-header">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <span class="nav-logo-icon">✅</span>
+                    <span class="nav-logo-text">ThePayBureau Pro</span>
+                </div>
+                <a href="/" class="nav-bureau-link">
+                    🏢 For Bureau Owners →
+                </a>
+            </div>
+        </div>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -1107,6 +1223,23 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bureau Owner CTA Section -->
+    <section class="bureau-cta-section">
+        <div class="container">
+            <div class="bureau-cta-content">
+                <h3 class="bureau-cta-title">
+                    Are You a Bureau Owner or Manager?
+                </h3>
+                <p class="bureau-cta-description">
+                    Discover how ThePayBureau can transform your entire bureau operations, not just individual workflows.
+                </p>
+                <a href="/" class="bureau-cta-button">
+                    Learn About ThePayBureau for Bureaus →
+                </a>
             </div>
         </div>
     </section>
