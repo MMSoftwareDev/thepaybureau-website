@@ -879,6 +879,37 @@
             }
         }
         
+        /* Footer */
+        .footer {
+            background: var(--gray-900);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--gray-300);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            color: var(--gray-400);
+        }
+
         /* Smooth scrolling */
         html {
             scroll-behavior: smooth;
@@ -909,7 +940,8 @@
                     ThePayBureau
                 </a>
                 <div class="nav-buttons">
-                    <a href="/pro.html" class="nav-link">For Payroll Specialists</a>
+                    <a href="/roadmap" class="nav-link">Roadmap &amp; Pricing</a>
+                    <a href="/pro" class="nav-link">For Payroll Specialists</a>
                     <a href="#hero-form" class="nav-cta">Get Early Access</a>
                 </div>
             </div>
@@ -996,8 +1028,8 @@
                         <span class="stat-label">UK Bureaus Total</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">2025</span>
-                        <span class="stat-label">Revolutionary Launch</span>
+                        <span class="stat-number">£0</span>
+                        <span class="stat-label">Free to Start</span>
                     </div>
                 </div>
             </div>
@@ -1112,7 +1144,7 @@
                         </li>
                         <li class="community-benefit">
                             <span class="benefit-icon">🎁</span>
-                            <span class="benefit-text">Founding member special launch pricing</span>
+                            <span class="benefit-text">Start free — plans from £0, <a href="/roadmap#pricing" style="color: inherit; font-weight: 700;">see pricing</a></span>
                         </li>
                         <li class="community-benefit">
                             <span class="benefit-icon">🎯</span>
@@ -1123,6 +1155,20 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="/roadmap">Roadmap</a>
+                <a href="/roadmap#pricing">Pricing</a>
+                <a href="/pro">For Payroll Specialists</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ThePayBureau. Built by payroll specialists, for payroll specialists.</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Performance monitoring
